@@ -1,3 +1,11 @@
+--drop all tables to set up database
+DROP TABLE departments CASCADE;
+DROP TABLE dept_emp CASCADE;
+DROP TABLE dept_manager CASCADE;
+DROP TABLE employees CASCADE;
+DROP TABLE salaries CASCADE;
+DROP TABLE titles CASCADE;
+
 CREATE DATABASE "Pewlett_Hackard_db";
 
 CREATE TABLE "departments" (
@@ -21,11 +29,11 @@ CREATE TABLE "dept_manager" (
 CREATE TABLE "employees" (
     "emp_no" int   NOT NULL,
     "emp_title_id" VARCHAR(5)   NOT NULL,
-    "birth_date" date   NOT NULL,
+    "birth_date" VARCHAR(10)   NOT NULL,
     "first_name" VARCHAR(30)   NOT NULL,
     "last_name" VARCHAR(30)   NOT NULL,
     "sex" VARCHAR(2)   NOT NULL,
-    "hire_date" date   NOT NULL,
+    "hire_date" VARCHAR(10)   NOT NULL,
     CONSTRAINT "pk_employees" PRIMARY KEY (
         "emp_no"
      )
@@ -79,5 +87,30 @@ SELECT * from salaries;
 
 --confirm import to titles table
 SELECT * from titles;
+
+--1. List the following details of each employee: 
+--employee number, last name, first name, sex, and salary.
+SELECT e.emp_no, e.last_name, e.first_name, e.sex, s.salary
+FROM employees as e
+	INNER JOIN salaries as s
+		ON e.emp_no = s.emp_no
+;
+
+--2. List first name, last name, and hire date for employees who were hired in 1986.
+SELECT first_name, last_name, hire_date
+FROM employees
+WHERE hire_date LIKE '%1986'
+;
+
+--3. List the manager of each department with the following information: 
+--department number, department name, the manager's employee number, last name, first name.
+SELECT 
+
+
+
+
+--4. List the department of each employee with the following information: 
+--employee number, last name, first name, and department name.
+SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
 
 
