@@ -1,3 +1,12 @@
+--Lines 2 through 8 information from QuickDBD ERD tool
+-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+-- Link to schema: https://app.quickdatabasediagrams.com/#/d/c7b5UR
+-- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
+
+-- Modify this code to update the DB schema diagram.
+-- To reset the sample schema, replace everything with
+-- two dots ('..' - without quotes).
+
 --Drop all tables to set up database
 --Drop with CASCADE to allow drop table after foreign keys have been set up
 DROP TABLE departments CASCADE;
