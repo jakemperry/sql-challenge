@@ -1,4 +1,4 @@
---Lines 2 through 8 information from QuickDBD ERD tool
+--Lines 2 through 8 information from QuickDBD ERD tool.  Schema includes edits by jmp.
 -- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/c7b5UR
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
