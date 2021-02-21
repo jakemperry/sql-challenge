@@ -3,7 +3,7 @@ This activity includes database setup and data retrieval exercises with a 'Pewle
 
 An ERD of the database is presented here:
 
-![ERD](QuickDBD-Pewlett Hackard.png)
+![ERD]('QuickDBD-Pewlett Hackard.png')
 
 This ERD image was generated using the [Quick Database Diagram Tool](http://www.quickdatabasediagrams.com/)
 
