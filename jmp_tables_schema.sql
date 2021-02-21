@@ -1,4 +1,5 @@
 --Drop all tables to set up database
+--Drop with CASCADE to allow drop table after foreign keys have been set up
 DROP TABLE departments CASCADE;
 DROP TABLE dept_emp CASCADE;
 DROP TABLE dept_manager CASCADE;
@@ -6,10 +7,11 @@ DROP TABLE employees CASCADE;
 DROP TABLE salaries CASCADE;
 DROP TABLE titles CASCADE;
 
+--CREATE DATABASE
 --Create database (can only run while another database is open)
 CREATE DATABASE "Pewlett_Hackard_db";
 
---Create Tables
+--CREATE TABLES AND FOREIGN KEYS
 --Tables need to be created and have CSVs imported in a specific order to maintain foreign keys
 --Initial table setup made using ERD tool
 
