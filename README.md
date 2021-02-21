@@ -2,7 +2,7 @@
 This activity includes database setup and data retrieval exercises with a 'Pewlett Hackard' data set including employee, department, title, and salary data.
 
 An ERD of the database is presented here:
-![ERD of 'Pewlett Hackard' database](QuickDBD-Pewlett Hackard.png)
+!(ERD of 'Pewlett Hackard' database)[QuickDBD-Pewlett Hackard.png]
 
 This ERD image was generated using the [Quick Database Diagram Tool](http://www.quickdatabasediagrams.com/)
 
